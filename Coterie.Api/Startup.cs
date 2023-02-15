@@ -1,5 +1,7 @@
+using System.Text.Json.Serialization;
 using Coterie.Api.ExceptionHelpers;
 using Coterie.Api.Interfaces;
+using Coterie.Api.Models.Requests;
 using Coterie.Api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -22,13 +24,16 @@ namespace Coterie.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers()
+                .AddJsonOptions(options => options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "Coterie.Api", Version = "v1"});
+                
             });
 
-            services.AddScoped<ITestService, TestService>();
+            services.AddScoped<IPremiumService, PremiumService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

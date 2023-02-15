@@ -11,6 +11,7 @@ namespace Coterie.UnitTests
         // Sample Moq setup
         // protected Mock<ITestService> MockTestService;
 
+        /*
         protected TestService TestService;
 
         [OneTimeSetUp]
@@ -20,6 +21,7 @@ namespace Coterie.UnitTests
 
             TestService = new TestService();
         }
+        */
 
         [TearDown]
         public void Cleanup()

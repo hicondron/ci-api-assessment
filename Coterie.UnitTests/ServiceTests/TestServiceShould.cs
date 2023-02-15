@@ -6,7 +6,7 @@ namespace Coterie.UnitTests
 {
     public class Tests : TestServiceTestsBase
     {
-        static object[] HappyCases =
+        /*static object[] HappyCases =
         {
             new [] { "Summer", "Winter", "Spring" },
             new [] { "Fall", "Winter"},
@@ -32,6 +32,6 @@ namespace Coterie.UnitTests
             
             // Assert
             Assert.Throws<IndexOutOfRangeException>(() => TestService.GetWeatherItems(badData));
-        }
+        }*/
     }
 }
