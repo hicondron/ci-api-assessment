@@ -8,7 +8,7 @@ The API contains a `POST` route that retrieves Premium Quotes based on the calle
 ## How To Use
 In `Coterie.Api`, from the terminal use `dotnet run` or run the `Coterie.Api` solution configuration.
 - Swagger Docs: https://localhost:5001/swagger/index.html
-- Direct Route for Postman or curl: https://localhost:5001/quote
+- Direct Route for Postman or curl: https://localhost:5001/api/premium
 
 
 ## Request/Response
