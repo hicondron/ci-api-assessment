@@ -1,7 +1,5 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Coterie.Api.Interfaces;
 using Coterie.Api.Models;
 using Coterie.Api.Models.Requests;
@@ -33,7 +31,7 @@ namespace Coterie.Api.Services
             };
         }
 
-        private static State GetStateAbbreviation(string state)
+        public State GetStateAbbreviation(string state)
         {
             state = state.ToUpperInvariant(); // Ignore case by converting to uppercase
             switch (state)
