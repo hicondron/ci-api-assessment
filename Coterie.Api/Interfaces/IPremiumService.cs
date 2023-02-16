@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 using Coterie.Api.Models;
 using Coterie.Api.Models.Requests;
 using Coterie.Api.Models.Responses;

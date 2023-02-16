@@ -1,6 +1,4 @@
-using System;
 using System.Linq;
-using Coterie.Api.Models;
 using Coterie.Api.Models.Requests;
 using FluentValidation;
 
